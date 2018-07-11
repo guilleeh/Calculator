@@ -234,7 +234,6 @@ let equalButton = mainContainer.querySelector(".equals");
 equalButton.addEventListener("click", function(event) {
 	if( isOperatorOn) {
 		isOperatorOn = false;
-		console.log(value);
 		var leftValue = value.split(`${sign}`)[0];
 		var rightValue = value.split(`${sign}`)[1];
 		if ( operatorSign == add ) {
