@@ -1,31 +1,40 @@
 body {
-	background-color: #ABB9CC;
+	background-color: #667292;
 }
 
 .Title {
 	text-align: center;
 	padding: 20px;
+	color: #f1e3dd;
+	font-family: Verdana;
+	text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .calc-bg {
 	margin: auto;
-	border: 2px solid black;
+	border: 2px solid #726b6b;
 	border-radius: 5px;
 	width: 350px;
 	padding-bottom: 5px;
 	padding-top: 5px;
-	background-color: #294F6D;
+	background-color: #f1e3dd;
 	box-shadow: -5px 5px 10px #a8a8a8;
 }
  
 .display {
 	margin: auto;
-	text-align: center;
+	text-align: right;
+	font-family: Verdana;
+	font-size: 20px;
 	width: 315px;
-	height: 90%;
-	padding: 8px 8px 32px 8px;
-	background-color: #142E54;
-	border: 2px solid black;
+	height: 17px;
+	padding: 8px 8px 16px 8px;
+	background-color: #8d9db6;
+	border: 2px solid #726b6b;
 	border-radius: 5px
 }
 
@@ -33,10 +42,11 @@ body {
 	margin: auto;
 	text-align: center;
 	width: 315px;
+	font-family: Verdana;
 	margin-top: 5px;
 	padding: 8px 8px 20px 8px;
-	background-color: #142E54;
-	border: 2px solid black;
+	background-color: #f1e3dd;
+	border: 2px solid #726b6b;
 	border-radius: 5px
 }
 
@@ -44,21 +54,24 @@ body {
 	width: 70px;
 	height: 50px;
 /*	padding: 10px 20px 10px 20px;*/
+	border: 1px solid #726b6b;
 	font-size: 20px;
+	font-family: Verdana;
 	border-radius: 5px;
 	position: relative;
-	background-color: #677C9B;;
+	background-color: #8d9db6;
 }
 
 .large-button {
 	width: 160px;
 	height: 50px;
 	font-size: 20px;
+	border: 1px solid #726b6b;
 	border-radius: 5px;
 	position: relative;
 	top: -4px;
 	left: 4px;
-	background-color: #677C9B;
+	background-color: #8d9db6;
 }
 
 .button-c {
@@ -160,4 +173,13 @@ body {
 .button:focus, .large-button:focus {
 	outline: 0;
 	background-color: #677C9B;
+}
+
+.button:hover {
+	background-color: #8daaaa;
+	transition-duration: 0.3s;
+}
+
+.button:active {
+	background-color: #8d9db6;
 }
