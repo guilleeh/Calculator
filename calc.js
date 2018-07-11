@@ -149,6 +149,19 @@ number_nine.addEventListener("click", function(event) {
 	displayNumbers(display);
 })
 
+let decimal = mainContainer.querySelector(".decimal");
+decimal.addEventListener("click", function(event) {
+	if( value.split(".").length < 3) {
+		value += ".";
+	}
+	displayNumbers(display);
+})
+
+// let plusMinus = mainContainer.querySelector(".button-pm");
+// plusMinus = addEventListener("click", function(event) {
+// 	if( value)
+// })
+
 /* OPERATIONS */
 //backspace
 let backspaceButton = mainContainer.querySelector(".large-button"); 
